@@ -1,6 +1,1 @@
-ffmpeg.exe -i "source\1080p\2012_tsr1_it_1080p.wmv"
-
--s 1024x576 -b:v 4000k -minrate 2000k -maxrate 4000k -bufsize 5000k -c:v mpeg4 -r 24
--acodec libmp3lame -b:a 96k -ar 44100
-
-"export\HMP130\test1.mp4"
+ffmpeg.exe -i "source\1080p\2012_tsr1_it_1080p.wmv" -s 1024x576 -b:v 4000k -minrate 2000k -maxrate 4000k -bufsize 5000k -c:v mpeg4 -r 24 -acodec libmp3lame -b:a 96k -ar 44100 "export\HMP130\test1.mp4"
