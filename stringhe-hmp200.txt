@@ -1,0 +1,5 @@
+ffmpeg.exe -i "source\1080p\2012_tsr1_it_1080p.wmv" -s 1920x1080 -b:v 8000k -minrate 5000k -maxrate 8000k -vcodec libx264 -r 25 -acodec libmp3lame -b:a 128k -ar 48000 "export\HMP200\test1.mp45"
+
+5Mbit CBR no audio
+ffmpeg.exe -i "source\1080p\2012_tsr1_it_1080p.wmv" -s 1920x1080 -b:v 5000k -minrate 5000k -maxrate 5000k -vcodec libx264 -r 25 "export\HMP200\test1.mp45"
+
